@@ -19,7 +19,7 @@ BOARD_CUSTOM_BOOTIMG_MK := device/lenovo/s960/OutImages.mk
 # Kernel
 BOARD_KERNEL_CMDLINE := 
 BOARD_INSTALLER_CMDLINE := $(BOARD_KERNEL_CMDLINE)
-BOARD_KERNEL_BASE := 0x00008000
+BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_RECOVERY_INITRC := device/lenovo/s960/recovery/init.rc
 TARGET_PREBUILT_RECOVERY_KERNEL := device/lenovo/s960/kernel
@@ -38,7 +38,7 @@ DEVICE_RESOLUTION := 1080x1920
 
 RECOVERY_GRAPHICS_USE_LINELENGTH := true 	# fixes slanty looking graphics on some devices
 RECOVERY_SDCARD_ON_DATA := true 			# this enables proper handling of /data/media on devices that have this folder for storage
-BOARD_HAS_NO_REAL_SDCARD := true 			# disables things like sdcard partitioning and may save you some space if TWRP isn't fitting in your recovery patition
+BOARD_HAS_NO_REAL_SDCARD := true 			# disables things like sdcard partitioning and may save you some space if TWRP isn't fitting in your recovery partition
 #TW_INCLUDE_DUMLOCK := true 				# includes HTC Dumlock for devices that need it
 
 TW_INTERNAL_STORAGE_PATH := "/data/media"
