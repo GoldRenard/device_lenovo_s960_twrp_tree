@@ -1,0 +1,10 @@
+ro.secure=0
+ro.allow.mock.location=1
+ro.debuggable=1
+persist.sys.usb.config=adb
+ro.product.model=S960
+ro.product.brand=Lenovo
+ro.product.name=S960
+ro.product.device=S960
+ro.product.board=S960
+ro.product.manufacturer=LENOVO
