@@ -22,7 +22,9 @@ $(call inherit-product-if-exists, vendor/lenovo/s960/s960-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += device/lenovo/s960/overlay
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/recovery/sec.ko:recovery/root/sec.ko
+	$(LOCAL_PATH)/recovery/sec.ko:recovery/root/sec.ko \
+	$(LOCAL_PATH)/MT6589_Android_scatter_emmc.txt:MT6589_Android_scatter_emmc.txt
+
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := s960
