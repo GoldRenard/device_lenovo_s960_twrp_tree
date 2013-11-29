@@ -53,6 +53,8 @@ TW_NO_USB_STORAGE := true 					# removes the USB storage button on devices that 
 
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/gadget/lun%d/file
+TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
+TW_MAX_BRIGHTNESS := 255
 
 SP1_NAME := "uboot"
 SP1_BACKUP_METHOD := image
